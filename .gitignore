@@ -4,3 +4,7 @@
 *.log
 venv/
 .ropeproject/
+build/
+dist/
+tornado_mailsender.egg-info/
+

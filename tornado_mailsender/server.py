@@ -56,7 +56,7 @@ class MainHandler(tornado.web.RequestHandler):
         self.write("OK")
 
 
-if __name__ == "__main__":
+def main():
     options.parse_command_line()
 
     handlers = [
@@ -66,3 +66,6 @@ if __name__ == "__main__":
 
     application.listen(options.port, options.host)
     tornado.ioloop.IOLoop.instance().start()
+
+if __name__ == "__main__":
+    main()
